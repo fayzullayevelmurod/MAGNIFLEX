@@ -48,6 +48,8 @@ $color-salmon: #DBAB8A;
 $color-green: #98B77F;
 $color-blue: #5799B9;
 $color-blue-dark: #174860;
+$color-white: #FFFFFF;
+$color-border: #21252940;
 
 // colors
 
@@ -101,11 +103,110 @@ address {
     overflow: hidden;
 }
 
-.main_container {
-    max-width: 1380px;
-    padding: 0 10px;
-    margin: 0 auto;
+.main {
+    &_container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    &_header_container {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
 }
+
+// header
+.header {
+
+    &_logo {
+        min-width: 205px;
+    }
+
+    &_btn {
+        height: 25px;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13.41px;
+        color: $color-white;
+        padding: 5px 18px;
+        border: 1px solid $color-white;
+    }
+
+    &_icons {
+        flex-shrink: 0;
+        @include flex-center();
+        gap: 30px;
+    }
+
+    .burger_icon {
+        display: none;
+    }
+
+    &_top {
+        background: $color-blue-dark;
+
+        &_link {
+            margin-left: auto;
+            padding: 18px 0;
+            @include flex-center();
+            gap: 30px;
+        }
+
+        &_item {
+            a {
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13.41px;
+                color: $color-white;
+                text-transform: uppercase;
+            }
+        }
+
+        &_btn {
+            @include flex-center();
+            gap: 30px;
+        }
+
+        &_phone {
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13.41px;
+            color: $color-white;
+        }
+    }
+
+    &_bottom {
+        border-bottom: 1px solid $color-border;
+        padding: 15px 0;
+
+        .main_header_container {
+            justify-content: space-between;
+        }
+
+        &_link {
+            gap: 50px;
+            @include flex-center();
+        }
+
+        &_item {
+            a {
+                @include flex-center();
+                gap: 5px;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.63px;
+                color: $color-blue-dark;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .main_header_container {
+        @include flex-center();
+        gap: 60px;
+    }
+}
+// header
 
 
 @import './responsive';
