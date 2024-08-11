@@ -161,7 +161,7 @@ address {
   padding: 25px 30px;
   position: absolute;
   width: 100%;
-  left: 0;
+  left: -100%;
   top: 100%;
   z-index: 3;
   transition: 0.3s ease;
@@ -193,6 +193,7 @@ address {
 }
 .header .media_menu .header_top_btn {
   justify-content: center;
+  flex-wrap: wrap;
 }
 .header .media_menu .header_top_btn .header_top_phone {
   color: #174860;
@@ -200,6 +201,9 @@ address {
 .header .media_menu .header_top_btn .header_btn {
   border: 1px solid #174860;
   color: #174860;
+}
+.header .media_menu.active {
+  left: 0;
 }
 
 .catalog {
@@ -284,9 +288,12 @@ address {
     display: none;
   }
 }
-@media only screen and (max-width: 993px) {
+@media only screen and (min-width: 993px) {
   .catalog {
     display: none;
+  }
+  .header .media_menu.active {
+    left: -100%;
   }
 }
 @media only screen and (max-width: 993px) {

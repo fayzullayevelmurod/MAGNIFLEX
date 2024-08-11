@@ -234,7 +234,7 @@ address {
         padding: 25px 30px;
         position: absolute;
         width: 100%;
-        left: 0;
+        left: -100%;
         top: 100%;
         z-index: 3;
         @include transition();
@@ -269,6 +269,7 @@ address {
 
         .header_top_btn {
             justify-content: center;
+            flex-wrap: wrap;
 
             .header_top_phone {
                 color: $color-blue-dark;
@@ -279,6 +280,10 @@ address {
                 color: $color-blue-dark;
             }
         }
+    }
+
+    .media_menu.active {
+        left: 0;
     }
     // media_menu
 }

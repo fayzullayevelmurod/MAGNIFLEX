@@ -43,9 +43,15 @@
   }
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (min-width: 993px) {
   .catalog {
     display: none;
+  }
+
+  .header {
+    .media_menu.active {
+      left: -100%;
+    }
   }
 }
 
