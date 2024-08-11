@@ -52,6 +52,14 @@
 }
 
 @media only screen and (max-width: 993px) {
+
+  .main {
+    &_title {
+      font-size: 28px;
+      line-height: 30.8px;
+    }
+  }
+
   .header {
 
     &_logo {
@@ -94,6 +102,30 @@
 
   .catalog {
     display: none;
+  }
+
+  .new {
+    padding: 50px 0;
+
+    .main_title {
+      margin-bottom: 30px;
+    }
+
+    &_card {
+      width: calc(100% / 2 - 15px);
+
+      h6 {
+        margin: 15px 0 10px 0;
+        font-size: 16px;
+        line-height: 17.6px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 13.2px;
+      }
+    }
+
   }
 
   .footer {
@@ -172,6 +204,32 @@
       .main_container {
         flex-direction: column;
         gap: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .new {
+
+    &_cards {
+      gap: 30px;
+    }
+
+    &_card {
+      width: calc(100%);
+      border: none;
+
+      span {
+        display: none;
+      }
+
+      .new_card_content {
+        padding: 0;
+      }
+
+      .new_card_bottom {
+        display: none;
       }
     }
   }
