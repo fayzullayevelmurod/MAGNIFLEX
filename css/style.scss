@@ -45,6 +45,7 @@ $font-Inter: "Inter",sans-serif;
 // colors
 $color-coral: #FFB583;
 $color-salmon: #DBAB8A;
+$color-salmon-text: #B09987;
 $color-green: #98B77F;
 $color-blue: #5799B9;
 $color-blue-dark: #174860;
@@ -119,7 +120,6 @@ address {
 
 // header
 .header {
-    margin-bottom: 1000px;
     position: relative;
 
     &_logo {
@@ -350,8 +350,59 @@ address {
     height: 381px;
 }
 // catalog
-
 // header
+
+// footer
+.footer {
+    &_top {
+        padding: 90px 0;
+        background: $color-blue-dark;
+
+        .main_container {
+            display: flex;
+        }
+    }
+
+    &_block {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &_links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &_links_two {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &_link {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 17.6px;
+            color: $color-white;
+        }
+    }
+
+    h6 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 22px;
+        color: $color-salmon-text;
+    }
+}
+// footer
 
 
 @import './responsive';

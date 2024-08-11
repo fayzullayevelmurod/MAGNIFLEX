@@ -62,7 +62,6 @@ address {
 }
 
 .header {
-  margin-bottom: 1000px;
   position: relative;
 }
 .header_logo {
@@ -258,6 +257,47 @@ address {
 
 .catalog.active {
   height: 381px;
+}
+
+.footer_top {
+  padding: 90px 0;
+  background: #174860;
+}
+.footer_top .main_container {
+  display: flex;
+}
+.footer_block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer_links_two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer_link {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer_link a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.6px;
+  color: #FFFFFF;
+}
+.footer h6 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #B09987;
 }
 
 @media only screen and (max-width: 1560px) {
