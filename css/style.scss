@@ -236,11 +236,12 @@ address {
         width: 100%;
         left: -100%;
         top: 100%;
-        z-index: 3;
+        z-index: 9;
         @include transition();
         display: flex;
         flex-direction: column;
         gap: 25px;
+        background: $color-white;
 
         &_link {
             display: flex;
@@ -293,7 +294,7 @@ address {
     position: absolute;
     left: 0;
     top: 100%;
-    z-index: 2;
+    z-index: 5;
     width: 100%;
     overflow: hidden;
     height: 0;
@@ -360,7 +361,57 @@ address {
 
         .main_container {
             display: flex;
+            align-items: stretch;
+            justify-content: space-between;
         }
+    }
+
+    &_bottom {
+        background-color: $color-salmon-text;
+        padding: 23px 0;
+
+        .main_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 15.4px;
+            color: $color-white;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+
+            a,
+            span {
+                min-width: min-content;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 15.4px;
+                color: $color-white;
+            }
+        }
+    }
+
+    &_social {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &_line {
+        margin: 0 20px;
+        flex-shrink: 0;
+        min-height: 288px;
+        width: 1px;
+        background: $color-salmon-text;
     }
 
     &_block {
