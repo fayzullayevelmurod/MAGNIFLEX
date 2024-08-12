@@ -15,3 +15,9 @@ burger_icon.addEventListener('click', () => {
   media_menu.classList.toggle('active');
 })
 // media_menu
+
+var swiper = new Swiper(".homeSwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
