@@ -108,6 +108,102 @@
     .home_slide {
       height: 500px;
     }
+
+    .homeSwiper {
+
+      .swiper-pagination {
+        top: 16%;
+        gap: 6px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 15px;
+        height: 3px;
+      }
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 39.6px;
+    }
+
+    a {
+      margin-top: 75px;
+      padding: 11px 27px;
+    }
+  }
+
+  .statistic {
+    padding: 48px 0;
+
+    .line {
+      display: none;
+    }
+
+    &_block {
+      max-width: 100%;
+      width: calc(100% / 2);
+
+      &:nth-child(4) {
+        padding-left: 25px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      h6 {
+        margin: 20px 0 10px 0;
+        font-size: 12px;
+        line-height: 13.2px;
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 11px;
+      }
+    }
+
+    .start_border {
+      padding-bottom: 25px;
+      padding-right: 25px;
+    }
+
+    .two_border {
+      padding-left: 25px;
+      padding-bottom: 25px;
+      border-left: 1px solid $color-border;
+    }
+
+    .three_border {
+      padding-right: 25px;
+      padding-top: 25px;
+      border-top: 1px solid $color-border;
+    }
+
+    .end_border {
+      padding-top: 25px;
+      padding-left: 25px;
+      border-top: 1px solid $color-border;
+      border-left: 1px solid $color-border;
+    }
+
+  }
+
+  .partner {
+    padding: 50px 0;
+
+    &_logo {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .main_title {
+      margin-bottom: 48px;
+      font-size: 20px;
+      line-height: 22px;
+    }
   }
 
   .new {
@@ -237,6 +333,17 @@
       .new_card_bottom {
         display: none;
       }
+    }
+  }
+
+  .partner {
+
+    .top_logo {
+      max-width: 310px;
+    }
+
+    .bottom_logo {
+      max-width: 266px;
     }
   }
 }

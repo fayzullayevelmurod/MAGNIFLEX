@@ -448,13 +448,22 @@ address {
     background: $color-bg-block;
     padding: 95px 0;
 
+    .line {
+        margin: 0 10px;
+        width: 1px;
+        min-height: 170px;
+        background: $color-border;
+    }
+
     &_blocks {
         display: flex;
+        align-items: stretch;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 
     &_block {
-        width: calc(100% / 4);
+        max-width: 220px;
     }
 
     img {
@@ -478,6 +487,37 @@ address {
     }
 }
 // statistic
+
+// partner
+.partner {
+    padding: 105px 0;
+
+    .main_title {
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 53px;
+    }
+
+    &_logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .top_logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .bottom_logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+}
+// partner
 
 // new
 .new {
