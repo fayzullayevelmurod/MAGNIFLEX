@@ -16,8 +16,29 @@ burger_icon.addEventListener('click', () => {
 })
 // media_menu
 
-var swiper = new Swiper(".homeSwiper", {
+// home_slider
+let swiper = new Swiper(".homeSwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
 });
+// home_slider
+
+// office_slider
+let swiper2 = new Swiper(".officeSwiper", {
+  breakpoints: {
+    1280: {
+      slidesPerView: 4,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 2,
+    },
+  },
+});
+// office_slider

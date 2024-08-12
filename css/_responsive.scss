@@ -191,6 +191,33 @@
 
   }
 
+  .office {
+    background: $color-blue-dark;
+
+    &_title {
+      padding: 50px 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .main_title {
+      font-size: 28px;
+      line-height: 110%;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 15px;
+    }
+
+    h6 {
+      font-size: 12px;
+      max-width: 135px;
+      line-height: 13.2px;
+    }
+  }
+
   .partner {
     padding: 50px 0;
 

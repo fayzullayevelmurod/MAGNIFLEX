@@ -488,6 +488,75 @@ address {
 }
 // statistic
 
+// office
+.office {
+    &_title {
+        padding: 90px 0;
+        background-image: url('../images/office_bg.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main_title {
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: center;
+        color: $color-white;
+    }
+
+    p {
+        max-width: 1132px;
+        margin: 50px auto 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: $color-white;
+    }
+
+    .office_block {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        // height: 400px;
+
+        img {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    h6 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        color: $color-white;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .background_linear {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 37, 41, 0.5);
+        z-index: 2;
+    }
+}
+// office
+
 // partner
 .partner {
     padding: 105px 0;
