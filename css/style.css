@@ -266,12 +266,15 @@ address {
   height: 381px;
 }
 
+.home {
+  background: #F7F7F7;
+}
 .home .homeSwiper .swiper-pagination {
   max-width: 1400px;
   margin: 0 auto;
-  top: 223px;
-  left: 0;
-  right: 0;
+  top: 20%;
+  left: 25px;
+  right: 25px;
   bottom: auto;
   display: flex;
   justify-content: start;
@@ -289,6 +292,13 @@ address {
 }
 .home .home_slide {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.home .home_slide img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home .background_linear {
   position: absolute;
@@ -300,13 +310,11 @@ address {
 }
 .home .main_container {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 .home h1 {
-  margin-top: 368px;
   font-size: 50px;
   font-weight: 500;
   line-height: 55px;
@@ -322,6 +330,35 @@ address {
   text-transform: uppercase;
   padding: 18px 48px;
   border: 1px solid #FFFFFF;
+}
+
+.statistic {
+  background: #F7F7F7;
+  padding: 95px 0;
+}
+.statistic_blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.statistic_block {
+  width: 25%;
+}
+.statistic img {
+  width: 50px;
+  height: 50px;
+}
+.statistic h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17.6px;
+  color: #174860;
+  margin: 24px 0 10px 0;
+}
+.statistic p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15.4px;
+  color: #B09987;
 }
 
 .new {
@@ -539,6 +576,9 @@ address {
   }
   .catalog {
     display: none;
+  }
+  .home .home_slide {
+    height: 500px;
   }
   .new {
     padding: 50px 0;
