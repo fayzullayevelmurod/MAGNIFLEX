@@ -68,3 +68,59 @@ var swiper3 = new Swiper(".youtubeSwiper", {
 });
 
 // youtube
+
+// bestsellersSwiper
+var swiper3 = new Swiper(".bestsellersSwiper", {
+  spaceBetween: 40,
+  navigation: {
+    nextEl: ".bestsellers-button-next",
+    prevEl: ".bestsellers-button-prev",
+  },
+  breakpoints: {
+    1280: {
+      slidesPerView: 2.60,
+      spaceBetween: 60,
+    },
+    992: {
+      slidesPerView: 2.60,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 2.60,
+      spaceBetween: 40,
+    },
+    0: {
+      slidesPerView: 1.50,
+      spaceBetween: 40,
+    },
+  },
+});
+// bestsellersSwiper
+
+// comfortableSwiper
+var swiper3 = new Swiper(".comfortableSwiper", {
+  spaceBetween: 40,
+  navigation: {
+    nextEl: ".comfortable-button-next",
+    prevEl: ".comfortable-button-prev",
+  },
+  breakpoints: {
+    1280: {
+      slidesPerView: 3.50,
+      spaceBetween: 60,
+    },
+    992: {
+      slidesPerView: 3.60,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 2.60,
+      spaceBetween: 40,
+    },
+    0: {
+      slidesPerView: 1.50,
+      spaceBetween: 40,
+    },
+  },
+});
+// comfortableSwiper

@@ -650,6 +650,149 @@ address {
 }
 // statistic
 
+// comfortable
+.comfortable {
+    background: $color-white;
+    padding: 75px 0;
+
+    .main_title {
+        text-align: center;
+    }
+
+    .comfortableSwiper {
+        overflow: visible;
+    }
+
+    p {
+        max-width: 1090px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        margin: 20px auto 53px auto;
+    }
+
+    &_card {
+        a {
+            padding: 0;
+            border: none;
+            display: block;
+
+            img {
+                width: 6px;
+                height: 12px;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h6 {
+            text-align: left;
+            width: auto;
+            transform: none;
+            position: static;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 22px;
+            color: $color-blue-dark;
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            color: $color-salmon-text;
+        }
+    }
+
+    &_content {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;       border-bottom: 1px solid #21252940;
+    }
+}
+// comfortable
+
+// bestsellers
+.bestsellers {
+    padding: 90px 0 75px 0;
+    background: $color-bg-block;
+
+    h3 {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 30px;
+        color: $color-salmon-text;
+        margin-bottom: 50px;
+    }
+
+    &_content {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #21252940;
+    }
+
+    .bestsellersSwiper {
+        overflow: visible;
+    }
+
+    &_btns {
+        margin-top: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 40px;
+
+        button {
+            width: 12px;
+            height: 24px;
+        }
+    }
+
+    &_card {
+
+        img {
+            width: 100%;
+        }
+
+        h6 {
+            text-align: left;
+            width: auto;
+            transform: none;
+            position: static;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 22px;
+            color: $color-blue-dark;
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            color: $color-salmon-text;
+        }
+
+        a {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17.07px;
+            color: $color-blue-dark;
+            padding: 8px 29px;
+            border: 1px solid $color-blue-dark;
+        }
+    }
+}
+// bestsellers
+
 // youtube
 .youtube {
     padding: 112px 0;
