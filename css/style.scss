@@ -556,6 +556,10 @@ address {
     padding: 100px 0;
     background: $color-bg-block;
 
+    &_more {
+        display: none;
+    }
+
     &_title {
         display: flex;
         align-items: center;
@@ -645,6 +649,48 @@ address {
     }
 }
 // statistic
+
+// youtube
+.youtube {
+    padding: 112px 0;
+
+    .main_title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .youtubeSwiper {
+        .swiper-slide {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &_slider {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .slider_btn {
+        flex-shrink: 0;
+    }
+
+    .slider_btns {
+        padding: 0 25px;
+        margin-top: 25px;
+        display: none;
+        align-items: center;
+        justify-content: end;
+        gap: 18px;
+
+        button {
+            flex-shrink: 0;
+        }
+    }
+}
+// youtube
 
 // office
 .office {

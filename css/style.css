@@ -431,6 +431,9 @@ address {
   padding: 100px 0;
   background: #F7F7F7;
 }
+.news_more {
+  display: none;
+}
 .news_title {
   display: flex;
   align-items: center;
@@ -503,6 +506,36 @@ address {
   font-weight: 400;
   line-height: 15.4px;
   color: #B09987;
+}
+
+.youtube {
+  padding: 112px 0;
+}
+.youtube .main_title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.youtube .youtubeSwiper .swiper-slide img {
+  width: 100%;
+}
+.youtube_slider {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.youtube .slider_btn {
+  flex-shrink: 0;
+}
+.youtube .slider_btns {
+  padding: 0 25px;
+  margin-top: 25px;
+  display: none;
+  align-items: center;
+  justify-content: end;
+  gap: 18px;
+}
+.youtube .slider_btns button {
+  flex-shrink: 0;
 }
 
 .office_title {
@@ -1022,6 +1055,45 @@ address {
   }
   .news_card {
     width: 100%;
+  }
+  .news_card:nth-child(n+3) {
+    display: none;
+  }
+  .news_more_in {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .news_more {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    color: #174860;
+  }
+  .youtube {
+    padding: 50px 0;
+  }
+  .youtube .main_container {
+    max-width: 100%;
+  }
+  .youtube .main_title {
+    margin-bottom: 34px;
+  }
+  .youtube .youtubeSwiper {
+    overflow: visible;
+  }
+  .youtube .slider_btn {
+    display: none;
+  }
+  .youtube_slider {
+    display: block;
+  }
+  .youtube .slider_btns {
+    display: flex;
   }
   .partner .top_logo {
     max-width: 310px;

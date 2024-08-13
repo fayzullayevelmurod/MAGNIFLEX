@@ -42,3 +42,29 @@ let swiper2 = new Swiper(".officeSwiper", {
   },
 });
 // office_slider
+
+// youtube
+var swiper3 = new Swiper(".youtubeSwiper", {
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".youtube-button-next",
+    prevEl: ".youtube-button-prev",
+  },
+  breakpoints: {
+    1280: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  },
+});
+
+// youtube

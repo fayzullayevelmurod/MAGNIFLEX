@@ -448,9 +448,54 @@
     &_card {
       width: calc(100%);
 
-      h6 {
-
+      &:nth-child(n+3) {
+        display: none;
       }
+    }
+
+    &_more_in {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &_more {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15.4px;
+      color: $color-blue-dark;
+    }
+  }
+
+  .youtube {
+    padding: 50px 0;
+
+    .main_container {
+      max-width: 100%;
+    }
+
+    .main_title {
+      margin-bottom: 34px;
+    }
+
+    .youtubeSwiper {
+      overflow: visible;
+    }
+
+    .slider_btn {
+      display: none;
+    }
+
+    &_slider {
+      display: block;
+    }
+
+    .slider_btns {
+      display: flex;
     }
   }
 
