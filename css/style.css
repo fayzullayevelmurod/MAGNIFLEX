@@ -1095,6 +1095,10 @@ address {
   .youtube .slider_btns {
     display: flex;
   }
+  .youtube .slider_btns button {
+    width: 6px;
+    height: 12px;
+  }
   .partner .top_logo {
     max-width: 310px;
   }

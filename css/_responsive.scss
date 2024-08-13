@@ -496,6 +496,11 @@
 
     .slider_btns {
       display: flex;
+
+      button {
+        width: 6px;
+        height: 12px;
+      }
     }
   }
 
