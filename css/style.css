@@ -1336,6 +1336,62 @@ address {
   flex-direction: column;
   gap: 20px;
 }
+.product_info .payment_block_ends {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.product_info .payment_block_ends .payment_block_end {
+  width: calc(33.3333333333% - 27px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.product_info .payment_block_ends p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #212529;
+}
+.product_info .payment_block_ends p .phone {
+  font-weight: 500;
+}
+.product_info .payment_block_ends .payment_block_ends {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.product_info .payment_block_ends .payment_ends {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.product_info .payment_block_ends .payment_ends span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #212529;
+}
+.product_info .payment_block_ends .payment_ends p {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #8C8C8C;
+}
+.product_info .payment_block_ends .end_text {
+  font-weight: 500;
+}
+.product_info .payment_block_ends .payment_ends_block {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.product_info .payment_block_ends .ends_text {
+  display: flex;
+  flex-direction: column;
+}
 
 .product_information {
   margin-top: 100px;
@@ -2034,6 +2090,43 @@ address {
   }
   .product_info .certificates .certificates_right_block {
     gap: 10px;
+  }
+  .product_info .payment h6 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .product_info .payment h4 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+  .product_info .payment p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .product_info .payment_info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .product_info .payment_in {
+    gap: 30px;
+  }
+  .product_info .payment_block {
+    gap: 10px;
+  }
+  .product_info .payment_block_ends {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .product_info .payment_block_ends .payment_block_end {
+    width: 100%;
+    gap: 15px;
+  }
+  .product_info .payment_block_ends .payment_ends {
+    gap: 15px;
+  }
+  .product_info .payment_block_ends .payment_ends p {
+    margin-top: 15px;
   }
   .product_information .materials .materialsSwiper {
     display: none;
