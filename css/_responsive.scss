@@ -42,6 +42,20 @@
     }
   }
 
+  .product_info {
+    .tabs {
+      gap: 15px 30px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .tab {
+      font-size: 12px;
+      line-height: 14px;
+      padding-bottom: 10px;
+    }
+  }
+
   .product_information {
     margin-top: 50px;
 
@@ -580,6 +594,68 @@
       margin-bottom: 30px;
       font-size: 28px;
       line-height: 30px;
+    }
+  }
+
+  .product_info {
+    margin-top: 40px;
+
+    .description {
+
+      &_blocks {
+        h6 {
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+
+        .description_text {
+          margin-bottom: 10px;
+        }
+      }
+
+      .descriptionSwiper {
+        margin-top: 30px;
+
+        .swiper-slide {
+          height: 190px;
+        }
+      }
+    }
+
+    .certificates {
+      flex-direction: column;
+
+      h6 {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      ul {
+        li {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      .certificates_left,
+      .certificates_right {
+        gap: 30px;
+      }
+
+      .certificates_right_block {
+        gap: 10px;
+      }
     }
   }
 

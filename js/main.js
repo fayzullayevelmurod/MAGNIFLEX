@@ -149,6 +149,32 @@ var swiper3 = new Swiper(".materialsSwiper", {
 });
 // materialsSwiper
 
+// descriptionSwiper
+var swiper3 = new Swiper(".descriptionSwiper", {
+  spaceBetween: 20,
+  breakpoints: {
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    0: {
+      initialSlide: 1,
+      centeredSlides: true,
+      slidesPerView: 1.30,
+      spaceBetween: 20,
+    },
+  },
+});
+// descriptionSwiper
+
 // select
 let index = 1;
 

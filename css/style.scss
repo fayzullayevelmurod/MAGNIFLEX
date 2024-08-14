@@ -1460,6 +1460,131 @@ address {
 }
 // product_card_home
 
+// product_info
+.product_info {
+    margin-top: 75px;
+
+    .tabs {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        margin-bottom: 50px;
+    }
+
+    .tab {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: $color-blue-dark;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .tab.active {
+        border-bottom: 1px solid $color-salmon-text;
+    }
+
+    .description {
+        &_blocks {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h6 {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24.38px;
+                color: $color-blue-dark;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $color-black;
+            }
+
+            .description_text {
+                margin-bottom: 20px;
+            }
+        }
+
+        .descriptionSwiper {
+            margin-top: 57px;
+            overflow: visible;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+
+            .swiper-slide {
+                height: 327px;
+            }
+        }
+    }
+
+    .certificates {
+        display: flex;
+        gap: 50px;
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $color-black;
+        }
+
+        h6 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24.38px;
+            color: $color-blue-dark;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        ul {
+            li {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $color-black;
+            }
+        }
+
+        .certificates_left,
+        .certificates_right {
+            max-width: 675px;
+        }
+
+        .certificates_left,
+        .certificates_right {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .certificates_right_block {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .certificates_left_block {
+            img {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+// product_info
+
 // product_information
 .product_information {
     margin-top: 100px;
@@ -1540,6 +1665,11 @@ address {
     }
 
     .materials {
+        padding-bottom: 30px;
+
+        .materials_media {
+            display: none;
+        }
 
         .materials_card {
             display: flex;
