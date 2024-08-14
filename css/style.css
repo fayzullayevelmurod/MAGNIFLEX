@@ -67,6 +67,14 @@ address {
   color: #174860;
 }
 
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
 .swiper .office_block {
   position: relative;
   overflow: hidden;
@@ -1155,6 +1163,137 @@ address {
   margin-bottom: 50px;
 }
 
+.product_card_home {
+  background: #F7F7F7;
+}
+.product_card_home .main_container {
+  display: flex;
+  gap: 20px;
+}
+
+.product_information {
+  margin-top: 100px;
+}
+.product_information .tabs {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-bottom: 50px;
+}
+.product_information .tab {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #174860;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.product_information .tab.active {
+  border-bottom: 1px solid #B09987;
+}
+.product_information .matress {
+  padding: 57px 0;
+  background: #EBE4DC;
+}
+.product_information .matress .matress_left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 750px;
+}
+.product_information .matress .matress_right {
+  max-width: 656px;
+}
+.product_information .matress .matress_right img {
+  max-width: 656px;
+}
+.product_information .matress .main_container {
+  display: flex;
+  gap: 47px;
+}
+.product_information .matress h6 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #174860;
+  margin-bottom: 10px;
+}
+.product_information .matress h6 span {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #174860;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product_information .matress p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #212529;
+}
+.product_information .materials .materials_card {
+  display: flex;
+  flex-direction: column;
+}
+.product_information .materials .materials_card img {
+  max-width: 250px;
+}
+.product_information .materials h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.38px;
+  color: #174860;
+  margin: 30px 0 15px 0;
+}
+.product_information .materials p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #212529;
+}
+.product_information .about {
+  background: #F7F7F7;
+  padding: 72px 0;
+}
+.product_information .about .about_in {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.product_information .about .about_block {
+  width: calc(25% - 27px);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.product_information .about .about_block img {
+  flex-shrink: 0;
+}
+.product_information .about .about_block h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  color: #174860;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.product_information .about .about_block span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  color: #B09987;
+}
+
 .footer_top {
   padding: 90px 0;
   background: #174860;
@@ -1266,6 +1405,52 @@ address {
   }
   .header_bottom .hidden {
     display: none;
+  }
+  .product_information {
+    margin-top: 50px;
+  }
+  .product_information .tabs {
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .product_information .tab {
+    font-size: 12px;
+    line-height: 14px;
+    padding-bottom: 10px;
+  }
+  .product_information .matress {
+    padding: 30px 0 0 0;
+  }
+  .product_information .matress .main_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .product_information .matress h6 {
+    font-size: 16px;
+    line-height: 22px;
+    gap: 15px;
+  }
+  .product_information .matress p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .product_information .matress .matress_left {
+    gap: 30px;
+  }
+  .product_information .matress .matress_left,
+  .product_information .matress .matress_right {
+    max-width: 100%;
+  }
+  .product_information .matress .matress_right img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .product_information .about .about_in {
+    gap: 20px;
+  }
+  .product_information .about .about_block {
+    width: calc(50% - 10px);
   }
 }
 @media only screen and (max-width: 1150px) {
@@ -1625,6 +1810,17 @@ address {
     font-size: 28px;
     line-height: 30px;
   }
+  .product_information .materials .materialsSwiper {
+    display: none;
+  }
+  .product_information .materials .materials_media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .product_information .materials .materials_media .materials_card {
+    width: calc(50% - 15px);
+  }
   .footer h6 {
     font-size: 16px;
     line-height: 17px;
@@ -1766,5 +1962,34 @@ address {
   }
   .catalog_block .catalog_cards .catalog_card .catalog_card_img button {
     display: block;
+  }
+  .product_information .about {
+    padding: 30px 0;
+  }
+  .product_information .about .about_block {
+    width: 100%;
+  }
+  .product_information .about .about_block h6 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .product_information .about .about_block span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .product_information .materials h4 {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 20px 0 10px 0;
+  }
+  .product_information .materials p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .product_information .materials .materials_media .materials_card {
+    width: 100%;
+  }
+  .product_information .materials .materials_media .materials_card img {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

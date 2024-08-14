@@ -125,6 +125,30 @@ var swiper3 = new Swiper(".comfortableSwiper", {
 });
 // comfortableSwiper
 
+// materialsSwiper
+var swiper3 = new Swiper(".materialsSwiper", {
+  spaceBetween: 40,
+  breakpoints: {
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 60,
+    },
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+  },
+});
+// materialsSwiper
+
 // select
 let index = 1;
 
@@ -149,6 +173,44 @@ on('click', '.option', item => {
 	parent.innerText = item.target.innerText;
 })
 // select
+
+// tab
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
+// tab
+
+// var swiper7 = new Swiper(".product_cardSwiper", {
+//   loop: true,
+//   spaceBetween: 10,
+//   slidesPerView: 4,
+//   freeMode: true,
+//   watchSlidesProgress: true,
+// });
+// var swiper8 = new Swiper(".product_cardSwiper2", {
+//   loop: true,
+//   spaceBetween: 10,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   thumbs: {
+//     swiper: swiper,
+//   },
+// });
 
 
 var langArray = [];
@@ -176,7 +238,7 @@ $('#a li').click(function(){
 });
 
 $(".btn-select").click(function(){
-        // $(".b").toggle();
+        $(".b").toggle();
     });
 
 var sessionLang = localStorage.getItem('lang');
