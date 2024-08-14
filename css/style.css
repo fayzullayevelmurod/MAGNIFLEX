@@ -1150,6 +1150,11 @@ address {
   transform: scale(1, 1);
 }
 
+.product_card_comfortable .main_title {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
 .footer_top {
   padding: 90px 0;
   background: #174860;
@@ -1614,6 +1619,11 @@ address {
   .new_card p {
     font-size: 12px;
     line-height: 13.2px;
+  }
+  .product_card_comfortable .main_title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 30px;
   }
   .footer h6 {
     font-size: 16px;
