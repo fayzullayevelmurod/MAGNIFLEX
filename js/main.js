@@ -203,6 +203,8 @@ on('click', '.option', item => {
 // tab
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
+const tabs2 = document.querySelectorAll('[data-tab-targets]')
+const tabContents2 = document.querySelectorAll('[data-tab-contents]')
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -214,6 +216,20 @@ tabs.forEach(tab => {
       tab.classList.remove('active')
     })
     tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
+
+tabs2.forEach(tab2 => {
+  tab2.addEventListener('click', () => {
+    const target = document.querySelector(tab2.dataset.tabTarget)
+    tabContents2.forEach(tabContent2 => {
+      tabContent2.classList.remove('active')
+    })
+    tabs2.forEach(tab2 => {
+      tab2.classList.remove('active')
+    })
+    tab2.classList.add('active')
     target.classList.add('active')
   })
 })
