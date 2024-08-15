@@ -1734,6 +1734,210 @@ address {
         }
     }
 
+    .comment {
+        &_in {
+            display: flex;
+            gap: 100px;
+        }
+
+        .media_star {
+            display: none !important;
+
+            .star {
+                margin: 0;
+            }
+        }
+
+        .media_btns {
+            display: none !important;
+        }
+
+        h6 {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 34.13px;
+            color: $color-blue-dark;
+        }
+
+        h5 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24.38px;
+            color: $color-blue-dark;
+        }
+
+        &_left {
+            padding: 50px 100px;
+            background: $color-bg-block;
+            min-width: 540px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.07px;
+            color: $color-black;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 0 10px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.07px;
+            color: $color-black;
+            height: 40px;
+            background: $color-white;
+            border: none;
+        }
+
+        .star {
+            margin: 50px 0 30px 0;
+        }
+
+        textarea {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.07px;
+            color: $color-black;
+            background: $color-white;
+            border: none;
+            height: 137px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .input_block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form_btn {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17.07px;
+            color: $color-white;
+            text-transform: uppercase;
+            padding: 11px;
+            height: 40px;
+            width: 100%;
+            background: $color-blue-dark;
+        }
+
+        .input_btns {
+            display: flex;
+            gap: 20px;
+
+            button {
+                width: 70px;
+                height: 40px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17.07px;
+                text-align: center;
+                color: $color-black;
+                background-color: $color-white;
+            }
+
+            button.active {
+                background: $color-blue-dark;
+                color: $color-white;
+            }
+        }
+
+        &_right {
+            max-width: 860px;
+            padding: 50px 0;
+        }
+
+        .comment_popular {
+            padding: 50px 0 75px 0;
+            display: flex;
+            gap: 75px;
+
+            &_left {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            &_right {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .star {
+                margin: 0;
+                @include flex-center();
+                gap: 10px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            &_right_bottom {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            &_left_bottom {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+        &_text {
+            padding: 30px 0;
+            border-top: 1px solid #21252940;
+
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17.07px;
+                color: #8C8C8C;
+                margin-top: 5px;
+            }
+
+            &_title {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .star {
+                margin: 0;
+                @include flex-center();
+                gap: 10px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            p {
+                margin-top: 15px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $color-black;
+            }
+        }
+    }
 }
 // product_info
 

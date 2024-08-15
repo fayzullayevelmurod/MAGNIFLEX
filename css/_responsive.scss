@@ -54,6 +54,22 @@
       line-height: 14px;
       padding-bottom: 10px;
     }
+
+    .comment {
+      &_in {
+        gap: 40px;
+      }
+
+      &_left {
+        padding: 50px;
+        min-width: 450px;
+      }
+
+      .comment_popular {
+        justify-content: space-between;
+        gap: 20px;
+      }
+    }
   }
 
   .product_information {
@@ -702,6 +718,145 @@
 
           p {
             margin-top: 15px;
+          }
+        }
+      }
+    }
+
+    .comment {
+      &_in {
+        flex-direction: column;
+      }
+
+      input {
+        font-size: 12px;
+        line-height: 14px;
+        height: 35px;
+      }
+
+      &_left {
+        min-width: auto;
+        padding: 30px 20px 40px 20px;
+
+        h6 {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+
+      &_right {
+        padding: 40px 0;
+      }
+
+      h5 {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      .comment_popular {
+        padding: 40px 0;
+        flex-direction: column;
+
+        &_left {
+          flex-direction: row;
+          justify-content: space-between;
+
+          &_bottom {
+            flex-direction: column;
+            align-items: end;
+            gap: 2px;
+          }
+        }
+
+        &_right {
+          flex-direction: row;
+          justify-content: space-between;
+
+          &_bottom {
+            flex-direction: column;
+            align-items: end;
+            gap: 2px;
+          }
+        }
+
+        .star {
+          gap: 5px;
+
+          img {
+            width: 15px;
+            height: 15px;
+          }
+        }
+
+        span {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      &_text {
+        padding: 20px 0;
+
+        p {
+          margin-top: 10px;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      form {
+        gap: 20px;
+      }
+
+      h6 {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      label {
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      textarea {
+        height: 75px;
+      }
+
+      .form_btn {
+        font-size: 14px;
+        line-height: 17px;
+        height: 35px;
+      }
+
+      .desktop_star {
+        display: none;
+      }
+
+      .desktop_btns {
+        display: none !important;
+      }
+
+      .media_btns {
+        display: flex !important;
+
+        button {
+          height: 35px;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      .media_star {
+        display: flex !important;
+
+        .star {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 30px;
+            height: 30px;
           }
         }
       }
