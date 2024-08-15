@@ -1162,14 +1162,6 @@ address {
   margin-bottom: 50px;
 }
 
-.product_card_home {
-  background: #F7F7F7;
-}
-.product_card_home .main_container {
-  display: flex;
-  gap: 20px;
-}
-
 .product_info {
   margin-top: 75px;
 }
@@ -1410,8 +1402,18 @@ address {
 }
 .product_info .comment_left {
   padding: 50px 100px;
-  background: #F7F7F7;
   min-width: 540px;
+  position: relative;
+}
+.product_info .comment_left::before {
+  background: #F7F7F7;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
 }
 .product_info .comment form {
   display: flex;
@@ -1723,6 +1725,22 @@ address {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.product_card_home .product_cardSwiper2 {
+  height: 100%;
+}
+.product_card_home .product_cardSwiper2 .swiper-wrapper {
+  height: 100%;
+  align-items: stretch;
+}
+.product_card_home .product_cardSwiper2 .swiper-slide {
+  height: auto;
+}
+.product_card_home .product_cardSwiper2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .product_card_home .product_card_home_right {
   width: 502px;
   background: #FFFFFF;
@@ -1893,8 +1911,18 @@ address {
   color: #212529;
 }
 .return_link {
+  z-index: 1;
   padding: 100px;
+}
+.return_link::before {
   background: #F7F7F7;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
 }
 .return_link ul {
   width: 170px;
@@ -2542,7 +2570,10 @@ address {
   }
   .product_info .comment_left {
     min-width: auto;
-    padding: 30px 20px 40px 20px;
+    padding: 30px 0 40px 0;
+  }
+  .product_info .comment_left::before {
+    right: -25px;
   }
   .product_info .comment_left h6 {
     text-align: center;
@@ -2719,6 +2750,8 @@ address {
   }
   .return_link {
     padding: 50px 0 0 0;
+  }
+  .return_link::before {
     background: #FFFFFF;
   }
   .return_link ul {

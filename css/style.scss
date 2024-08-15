@@ -1451,17 +1451,6 @@ address {
 }
 // product_card_comfortable
 
-// product_card_home
-.product_card_home {
-    background: $color-bg-block;
-
-    .main_container {
-        display: flex;
-        gap: 20px;
-    }
-}
-// product_card_home
-
 // product_info
 .product_info {
     margin-top: 75px;
@@ -1762,8 +1751,19 @@ address {
 
         &_left {
             padding: 50px 100px;
-            background: $color-bg-block;
             min-width: 540px;
+            position: relative;
+
+            &::before {
+                background: $color-bg-block;
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100vw;
+                height: 100%;
+                z-index: -1;
+            }
         }
 
         form {
@@ -2130,6 +2130,25 @@ address {
         }
     }
 
+    .product_cardSwiper2 {
+        height: 100%;
+
+        .swiper-wrapper {
+            height: 100%;
+            align-items: stretch;
+        }
+
+        .swiper-slide {
+            height: auto;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     .product_card_home_right {
         width: 502px;
         background: $color-white;
@@ -2332,8 +2351,19 @@ address {
     }
 
     &_link {
+        z-index: 1;
         padding: 100px;
-        background: $color-bg-block;
+
+        &::before {
+            background: $color-bg-block;
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100vw;
+            height: 100%;
+            z-index: -1;
+        }
 
         ul {
             width: 170px;

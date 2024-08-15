@@ -286,7 +286,7 @@ $('#a li').click(function(){
 });
 
 $(".btn-select").click(function(){
-        $(".b").toggle();
+        // $(".b").toggle();
     });
 
 var sessionLang = localStorage.getItem('lang');
