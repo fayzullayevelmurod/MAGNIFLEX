@@ -129,20 +129,14 @@ address {
     }
 }
 
-[data-tab-contents] {
-    display: none;
-}
+.tabs_in {
+    .content_item {
+        display: none;
 
-.active[data-tab-contents] {
-    display: block;
-}
-
-[data-tab-content] {
-    display: none;
-}
-
-.active[data-tab-content] {
-    display: block;
+        &.active {
+            display: block;
+        }
+    }
 }
 
 .swiper {

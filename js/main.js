@@ -201,38 +201,36 @@ on('click', '.option', item => {
 // select
 
 // tab
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
-const tabs2 = document.querySelectorAll('[data-tab-targets]')
-const tabContents2 = document.querySelectorAll('[data-tab-contents]')
+const tabs_in = document.querySelectorAll('.tabs_in')
 
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.tabTarget)
-    tabContents.forEach(tabContent => {
-      tabContent.classList.remove('active')
-    })
-    tabs.forEach(tab => {
-      tab.classList.remove('active')
-    })
-    tab.classList.add('active')
-    target.classList.add('active')
-  })
-})
+if (tabs_in.length) {
+  tabs_in.forEach(item => {
+    let tabBtn = item.querySelectorAll('.tabs li');
+    let tabContent = item.querySelectorAll('.content_item');
 
-tabs2.forEach(tab2 => {
-  tab2.addEventListener('click', () => {
-    const target = document.querySelector(tab2.dataset.tabTarget)
-    tabContents2.forEach(tabContent2 => {
-      tabContent2.classList.remove('active')
+    tabBtn.forEach((btn,index) => {
+      btn.onclick = () => {
+        tabContent.forEach((content,id) => {
+          if (id == index) {
+            content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
+        })
+        tabBtn.forEach(i => {
+          if (i == btn) {
+            i.classList.add('active')
+          } else {
+            i.classList.remove('active')
+          }
+        })
+      }
     })
-    tabs2.forEach(tab2 => {
-      tab2.classList.remove('active')
-    })
-    tab2.classList.add('active')
-    target.classList.add('active')
   })
-})
+}
+
+
+
 // tab
 
 var swiper7 = new Swiper(".product_cardSwiper", {

@@ -67,19 +67,10 @@ address {
   color: #174860;
 }
 
-[data-tab-contents] {
+.tabs_in .content_item {
   display: none;
 }
-
-.active[data-tab-contents] {
-  display: block;
-}
-
-[data-tab-content] {
-  display: none;
-}
-
-.active[data-tab-content] {
+.tabs_in .content_item.active {
   display: block;
 }
 
