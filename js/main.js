@@ -235,24 +235,32 @@ tabs2.forEach(tab2 => {
 })
 // tab
 
-// var swiper7 = new Swiper(".product_cardSwiper", {
-//   loop: true,
-//   spaceBetween: 10,
-//   slidesPerView: 4,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-// });
-// var swiper8 = new Swiper(".product_cardSwiper2", {
-//   loop: true,
-//   spaceBetween: 10,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   thumbs: {
-//     swiper: swiper,
-//   },
-// });
+var swiper7 = new Swiper(".product_cardSwiper", {
+  loop: true,
+  spaceBetween: 4,
+  slidesPerView: 4,
+  direction: 'vertical',
+  mousewheel: true,
+  breakpoints: {
+    0: {
+      spaceBetween: 4,
+    },
+    993: {
+      spaceBetween: 10,
+    },
+    1440: {
+      spaceBetween: 10,
+    }
+  }
+});
+var swiper8 = new Swiper(".product_cardSwiper2", {
+  loop: true,
+  effect: "fade",
+  allowTouchMove: false,
+  thumbs: {
+    swiper: swiper7,
+  },
+});
 
 
 var langArray = [];
