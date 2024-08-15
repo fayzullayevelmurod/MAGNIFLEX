@@ -1694,6 +1694,63 @@ address {
   text-decoration: underline;
 }
 
+.return .main_container {
+  display: flex;
+  align-items: stretch;
+}
+.return_content {
+  padding: 75px 0 75px 100px;
+}
+.return_content h3 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #174860;
+  margin-bottom: 15px;
+}
+.return_content span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15.4px;
+  color: #8C8C8C;
+  margin-bottom: 50px;
+}
+.return_content h6 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 30.8px;
+  color: #174860;
+}
+.return_content p {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #212529;
+}
+.return_link {
+  padding: 100px;
+  background: #F7F7F7;
+}
+.return_link ul {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.return_link ul a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.6px;
+  color: #212529;
+}
+.return_link ul a:hover {
+  text-decoration: underline;
+}
+.return_link ul a.active {
+  text-decoration: underline;
+}
+
 .footer_top {
   padding: 90px 0;
   background: #174860;
@@ -2372,6 +2429,60 @@ address {
   }
   .product_information .materials .materials_media .materials_card {
     width: calc(50% - 15px);
+  }
+  .return .main_container {
+    flex-direction: column;
+  }
+  .return_link {
+    padding: 50px 0 0 0;
+    background: #FFFFFF;
+  }
+  .return_link ul {
+    width: 100%;
+    gap: 5px 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .return_link ul a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.63px;
+    color: #174860;
+    padding: 8px 10px;
+    border: 1px solid #174860;
+  }
+  .return_link ul a:hover {
+    text-decoration: none;
+    background: #174860;
+    color: #FFFFFF;
+  }
+  .return_link ul a.active {
+    text-decoration: none;
+    background: #174860;
+    color: #FFFFFF;
+  }
+  .return_content {
+    padding: 50px 0;
+  }
+  .return_content h3 {
+    font-size: 28px;
+    line-height: 30.8px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .return_content span {
+    font-size: 12px;
+    line-height: 13.2px;
+    margin-bottom: 30px;
+  }
+  .return_content h6 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .return_content p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 15px;
   }
   .footer h6 {
     font-size: 16px;
