@@ -879,6 +879,21 @@
         }
       }
     }
+
+    .description_block {
+      flex-direction: column;
+      gap: 20px;
+
+      h6 {
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
   }
 
   .product_card_home {
@@ -1260,6 +1275,12 @@
           }
         }
       }
+    }
+  }
+
+  .product_info {
+    .tabs {
+      justify-content: center;
     }
   }
 

@@ -1338,15 +1338,18 @@ address {
     margin-top: 75px;
 
     .tabs {
+        max-width: 1173px;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
-        gap: 200px;
+        justify-content: space-between;
+        gap: 100px;
         margin-bottom: 50px;
     }
 
     .tab {
+        cursor: pointer;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 22px;
         color: $color-blue-dark;
         padding-bottom: 20px;
@@ -1354,6 +1357,7 @@ address {
     }
 
     .tab.active {
+        font-weight: 600;
         border-bottom: 1px solid $color-salmon-text;
     }
 
@@ -1396,6 +1400,30 @@ address {
             .swiper-slide {
                 height: 327px;
             }
+        }
+    }
+
+    .description_block {
+        display: flex;
+        align-items: start;
+        max-width: 1173px;
+        margin: 0 auto;
+        gap: 50px;
+        justify-content: space-between;
+
+        h6 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            color: $color-blue-dark;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+            color: $color-black;
         }
     }
 
@@ -1830,7 +1858,7 @@ address {
 
     .tab {
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 22px;
         color: $color-blue-dark;
         padding-bottom: 20px;
@@ -1838,6 +1866,7 @@ address {
     }
 
     .tab.active {
+        font-weight: 600;
         border-bottom: 1px solid $color-salmon-text;
     }
 
@@ -2053,6 +2082,13 @@ address {
                     padding: 0;
                     width: 100%;
                     border: none;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+
+                .option {
+                    font-size: 14px;
+                    line-height: 22px;
                 }
             }
         }
@@ -2073,12 +2109,17 @@ address {
 
             button {
                 font-family: $font-Montserrat;
-                font-size: 10px;
+                font-size: 12px;
                 font-weight: 500;
-                line-height: 12.19px;
+                line-height: 14.19px;
                 @include flex-center();
                 gap: 5px;
                 color: $color-black;
+            }
+
+            img {
+                width: 14px;
+                height: 10px;
             }
         }
 
@@ -2098,9 +2139,9 @@ address {
             }
 
             span {
-                font-size: 10px;
-                font-weight: 400;
-                line-height: 12.19px;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 16px;
                 color: #8C8C8C;
                 text-decoration: none;
 
@@ -2146,7 +2187,7 @@ address {
 
             a {
                 font-size: 12px;
-                font-weight: 400;
+                font-weight: 500;
                 line-height: 16px;
                 color: #8C8C8C;
                 text-decoration: underline;
@@ -2174,9 +2215,9 @@ address {
 
         p {
             padding-top: 30px;
-            font-size: 10px;
+            font-size: 12px;
             font-weight: 400;
-            line-height: 12.19px;
+            line-height: 14.63px;
             text-align: center;
             color: #8C8C8C;
 

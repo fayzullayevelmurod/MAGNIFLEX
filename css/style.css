@@ -1071,20 +1071,24 @@ address {
   margin-top: 75px;
 }
 .product_info .tabs {
+  max-width: 1173px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  gap: 200px;
+  justify-content: space-between;
+  gap: 100px;
   margin-bottom: 50px;
 }
 .product_info .tab {
+  cursor: pointer;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 22px;
   color: #174860;
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 .product_info .tab.active {
+  font-weight: 600;
   border-bottom: 1px solid #B09987;
 }
 .product_info .description_blocks {
@@ -1120,6 +1124,27 @@ address {
 }
 .product_info .description .descriptionSwiper .swiper-slide {
   height: 327px;
+}
+.product_info .description_block {
+  display: flex;
+  align-items: start;
+  max-width: 1173px;
+  margin: 0 auto;
+  gap: 50px;
+  justify-content: space-between;
+}
+.product_info .description_block h6 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #174860;
+}
+.product_info .description_block p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #212529;
 }
 .product_info .certificates {
   display: flex;
@@ -1475,13 +1500,14 @@ address {
 }
 .product_information .tab {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 22px;
   color: #174860;
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 .product_information .tab.active {
+  font-weight: 600;
   border-bottom: 1px solid #B09987;
 }
 .product_information .matress {
@@ -1668,6 +1694,12 @@ address {
   padding: 0;
   width: 100%;
   border: none;
+  font-size: 14px;
+  line-height: 22px;
+}
+.product_card_home .home_product .product_card_select .select .option {
+  font-size: 14px;
+  line-height: 22px;
 }
 .product_card_home .home_product h6 {
   font-size: 28px;
@@ -1684,13 +1716,17 @@ address {
 }
 .product_card_home .home_product .home_product_top button {
   font-family: "Montserrat", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 12.19px;
+  line-height: 14.19px;
   display: flex;
   align-items: center;
   gap: 5px;
   color: #212529;
+}
+.product_card_home .home_product .home_product_top img {
+  width: 14px;
+  height: 10px;
 }
 .product_card_home .home_product .home_product_price {
   padding: 30px 0;
@@ -1707,9 +1743,9 @@ address {
   gap: 5px;
 }
 .product_card_home .home_product .home_product_price span {
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 12.19px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
   color: #8C8C8C;
   text-decoration: none;
 }
@@ -1748,7 +1784,7 @@ address {
 }
 .product_card_home .home_product .home_product_links a {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 16px;
   color: #8C8C8C;
   text-decoration: underline;
@@ -1771,9 +1807,9 @@ address {
 }
 .product_card_home .home_product p {
   padding-top: 30px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 12.19px;
+  line-height: 14.63px;
   text-align: center;
   color: #8C8C8C;
 }
@@ -2587,6 +2623,18 @@ address {
     width: 30px;
     height: 30px;
   }
+  .product_info .description_block {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product_info .description_block h6 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .product_info .description_block p {
+    font-size: 12px;
+    line-height: 14px;
+  }
   .product_card_home .main_container {
     flex-direction: column;
     gap: 30px;
@@ -2863,6 +2911,9 @@ address {
   }
   .catalog_block .catalog_cards .catalog_card .catalog_card_img button {
     display: block;
+  }
+  .product_info .tabs {
+    justify-content: center;
   }
   .product_information .about {
     padding: 30px 0;
