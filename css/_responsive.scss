@@ -241,6 +241,14 @@
 
       .catalog_card {
         width: calc(100% / 2 - 15px);
+
+        .card_color,
+        .card_size {
+          span {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        }
       }
     }
   }
@@ -1223,6 +1231,18 @@
     .catalog_cards {
       .catalog_card {
         width: 100%;
+
+        &:hover {
+          .size_blocks {
+            height: 95px;
+          }
+        }
+
+        .size_blocks {
+          .size_block {
+            width: calc(100% / 4 - 4px);
+          }
+        }
 
         h6 {
           font-size: 20px;

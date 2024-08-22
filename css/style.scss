@@ -231,7 +231,7 @@ address {
         font-family: $font-Montserrat;
         height: 50px;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 19.5px;
         padding: 15px 47px;
         background: $color-blue-dark;
@@ -247,6 +247,7 @@ address {
         padding: 15px;
         font-size: 16px;
         line-height: 19px;
+        font-weight: 500;
         color: $color-black;
         width: 100%;
         cursor: pointer;
@@ -1104,7 +1105,6 @@ address {
     }
 
     &_title {
-        margin-bottom: 50px;
 
         .main_title {
             margin-bottom: 15px;
@@ -1112,7 +1112,7 @@ address {
 
         p {
             font-size: 16px;
-            font-weight: 400;
+            font-weight: 500;
             line-height: 19.5px;
             color: $color-blue-dark;
         }
@@ -1120,8 +1120,9 @@ address {
 
     .catalog_cards {
         display: flex;
+        align-items: stretch;
         flex-wrap: wrap;
-        gap: 62px;
+        gap: 50px 62px;
     }
 
     .catalog_card {
@@ -1193,9 +1194,9 @@ address {
         }
 
         p {
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 16px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
             color: $color-blue-dark;
             margin-bottom: 30px;
         }
@@ -1222,6 +1223,7 @@ address {
             }
 
             button {
+                text-transform: uppercase;
                 font-family: $font-Montserrat;
                 font-size: 14px;
                 font-weight: 500;
@@ -1285,165 +1287,37 @@ address {
             border-bottom: 1px solid #21252940;
         }
 
-
         .card_size {
             display: flex;
-            gap: 13px;
-        }
-
-        .vodiapicker{
-            display: none;
-        }
-
-        .lang-select {
-            .btn-select {
-                span {
-                    font-family: $font-Montserrat;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 16px;
-                    color: $color-black;
-                }
-            }
-        }
-
-        #a {
-            padding: 10px;
-        }
-
-        #a img, .btn-select img{
-            width: 12px;
-            height: 12px;
-            overflow: hidden;
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-
-        #a li{
-            padding-top: 5px;
-            padding-bottom: 5px;
-            display: flex;
             align-items: center;
-            gap: 10px;
-        }
-
-        #a li{
-            cursor: pointer;
+            gap: 12px;
+            transform: translateX(3px);
 
             span {
-                font-weight: 400;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 16px;
+                font-weight: 500;
                 color: $color-black;
             }
         }
 
-        .b{
-            position: absolute;
-            display: none;
-            width: 100%;
-            display: none;
-            max-width: 200px;
-            box-shadow: 0 6px 12px rgba(0,0,0,.175);
-            background: #ffff;
-            border-radius: 5px;
-        }
-
-        // .open{
-        //     display: show !important;
-        // }
-
-        .btn-select{
-            width: 100%;
-        }
-
-        .btn-select li{
+        .card_color {
             display: flex;
             align-items: center;
-            gap: 10px;
-        }
-
-        .btn-select:focus{
-            outline:none;
-        }
-
-        .select {
-            position: relative;
-            width: 250px;
-        }
-
-        .select .selectBtn {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 16px;
-            color: $color-black;
-            width: 100%;
-            cursor: pointer;
-            position: relative;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-                -ms-user-select: none;
-                    user-select: none;
-
-                    img {
-                        flex-shrink: 0;
-                        width: 12px;
-                        height: 12px;
-                        border-radius: 50%;
-                        overflow: hidden;
-                    }
-        }
-        .select .selectBtn.toggle:after {
-            -webkit-transform: translateY(-50%) rotate(-135deg);
-                    transform: translateY(-50%) rotate(-135deg);
-        }
-        .select .selectDropdown {
-            position: absolute;
-            top: 100%;
-            width: 100%;
-            border-radius: 0 0 3px 3px;
-            overflow: hidden;
-            border-top: 1px solid #eee;
-            z-index: 1;
-            background: #fff;
-            -webkit-transform: scale(1, 0);
-                    transform: scale(1, 0);
-            -webkit-transform-origin: top center;
-                    transform-origin: top center;
-            visibility: hidden;
-            transition: 0.2s ease;
-            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-        }
-        .select .selectDropdown .option {
-            padding: 10px;
-            box-sizing: border-box;
-            cursor: pointer;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 16px;
-            color: $color-black;
-            display: flex;
-            gap: 10px;
-            align-items: center;
+            gap: 12px;
 
             img {
-                flex-shrink: 0;
                 width: 12px;
                 height: 12px;
                 border-radius: 50%;
-                overflow: hidden;
             }
-        }
-        .select .selectDropdown .option:hover {
-            background: #f8f8f8;
-        }
-        .select .selectDropdown.toggle {
-            visibility: visible;
-            -webkit-transform: scale(1, 1);
-                    transform: scale(1, 1);
+
+            span {
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 500;
+                color: $color-black;
+            }
         }
     }
 }
