@@ -2193,11 +2193,12 @@ address {
 
     .main_container {
         display: flex;
-        align-items: stretch;
+        align-items: start;
+        // align-items: stretch;
     }
 
     &_content {
-        padding: 75px 0 75px 100px;
+        padding: 75px 0 55px 100px;
 
         h3 {
             font-size: 50px;
@@ -2209,7 +2210,7 @@ address {
 
         span {
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 500;
             line-height: 15.4px;
             color: #8C8C8C;
             margin-bottom: 50px;
@@ -2217,7 +2218,7 @@ address {
 
         h6 {
             font-size: 28px;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 30.8px;
             color: $color-blue-dark;
         }
@@ -2225,7 +2226,7 @@ address {
         p {
             margin-top: 30px;
             font-size: 16px;
-            font-weight: 400;
+            font-weight: 500;
             line-height: 24px;
             color: $color-black;
         }
@@ -2233,6 +2234,8 @@ address {
     }
 
     &_link {
+        position: sticky;
+        top: 0;
         z-index: 1;
         padding: 100px;
 
@@ -2255,7 +2258,7 @@ address {
 
             a {
                 font-size: 16px;
-                font-weight: 400;
+                font-weight: 500;
                 line-height: 17.6px;
                 color: $color-black;
 
