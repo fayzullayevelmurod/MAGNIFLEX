@@ -1152,9 +1152,12 @@ address {
 }
 .product_info .certificates p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   color: #212529;
+}
+.product_info .certificates .left_text {
+  font-weight: 400;
 }
 .product_info .certificates h6 {
   font-size: 20px;
@@ -1167,7 +1170,7 @@ address {
 }
 .product_info .certificates ul li {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   color: #212529;
 }
@@ -1191,7 +1194,7 @@ address {
 }
 .product_info .payment h6 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 34.13px;
   color: #174860;
 }
@@ -1210,12 +1213,12 @@ address {
 }
 .product_info .payment p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   color: #212529;
 }
 .product_info .payment p b {
-  font-weight: 500;
+  font-weight: 600;
 }
 .product_info .payment a {
   text-decoration: underline;
@@ -1263,12 +1266,12 @@ address {
 }
 .product_info .payment_block_ends p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   color: #212529;
 }
 .product_info .payment_block_ends p .phone {
-  font-weight: 500;
+  font-weight: 600;
 }
 .product_info .payment_block_ends .payment_block_ends {
   display: flex;
@@ -1282,7 +1285,7 @@ address {
 }
 .product_info .payment_block_ends .payment_ends span {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   color: #212529;
 }
@@ -1290,11 +1293,11 @@ address {
   margin-top: 25px;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 500;
   color: #8C8C8C;
 }
 .product_info .payment_block_ends .end_text {
-  font-weight: 500;
+  font-weight: 600;
 }
 .product_info .payment_block_ends .payment_ends_block {
   display: flex;
@@ -1307,6 +1310,7 @@ address {
 }
 .product_info .comment_in {
   display: flex;
+  align-items: start;
   gap: 100px;
 }
 .product_info .comment .media_star {
@@ -1320,20 +1324,21 @@ address {
 }
 .product_info .comment h6 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 34.13px;
   color: #174860;
 }
 .product_info .comment h5 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24.38px;
   color: #174860;
 }
 .product_info .comment_left {
   padding: 50px 100px;
   min-width: 540px;
-  position: relative;
+  position: sticky;
+  top: 10px;
 }
 .product_info .comment_left::before {
   background: #F7F7F7;
@@ -1352,7 +1357,7 @@ address {
 }
 .product_info .comment label {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 17.07px;
   color: #212529;
   margin-bottom: 10px;
@@ -1360,7 +1365,7 @@ address {
 .product_info .comment input {
   padding: 0 10px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 17.07px;
   color: #212529;
   height: 40px;
@@ -1373,7 +1378,7 @@ address {
 .product_info .comment textarea {
   padding: 10px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 17.07px;
   color: #212529;
   background: #FFFFFF;
@@ -1461,7 +1466,7 @@ address {
 }
 .product_info .comment_text span {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 17.07px;
   color: #8C8C8C;
   margin-top: 5px;
@@ -1484,7 +1489,7 @@ address {
 .product_info .comment_text p {
   margin-top: 15px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   color: #212529;
 }
@@ -1575,14 +1580,14 @@ address {
 }
 .product_information .materials h4 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24.38px;
   color: #174860;
   margin: 30px 0 15px 0;
 }
 .product_information .materials p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   color: #212529;
 }
@@ -2513,6 +2518,7 @@ address {
   }
   .product_info .comment_in {
     flex-direction: column;
+    gap: 0;
   }
   .product_info .comment input {
     font-size: 12px;
@@ -2520,6 +2526,7 @@ address {
     height: 35px;
   }
   .product_info .comment_left {
+    width: 100%;
     min-width: auto;
     padding: 30px 0 40px 0;
   }
