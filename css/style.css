@@ -830,21 +830,21 @@ address {
 }
 .new_card span {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 15.4px;
   color: #8C8C8C;
 }
 .new_card h6 {
   font-size: 20px;
-  font-weight: 500;
-  line-height: 24.38px;
+  font-weight: 600;
+  line-height: 30px;
   color: #174860;
   margin: 15px 0;
 }
 .new_card p {
   font-size: 16px;
-  font-weight: 400;
-  line-height: 17.6px;
+  font-weight: 500;
+  line-height: 25px;
   color: #212529;
 }
 .new_card .new_card_bottom {
@@ -857,9 +857,10 @@ address {
   align-items: center;
   gap: 10px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 16px;
   color: #B09987;
+  text-transform: uppercase;
 }
 .new_card_content {
   padding: 20px 30px 30px 30px;
