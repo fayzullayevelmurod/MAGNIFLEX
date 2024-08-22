@@ -972,8 +972,8 @@ address {
         max-width: 1132px;
         margin: 50px auto 0 auto;
         font-size: 20px;
-        font-weight: 400;
-        line-height: 22px;
+        font-weight: 500;
+        line-height: 30px;
         text-align: center;
         color: $color-white;
     }
@@ -2436,9 +2436,9 @@ address {
             a,
             span {
                 min-width: min-content;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 15.4px;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 13px;
                 color: $color-white;
             }
         }
@@ -2467,7 +2467,7 @@ address {
     &_links {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 13px;
     }
 
     &_links_two {
@@ -2480,19 +2480,19 @@ address {
     &_link {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 13px;
 
         a {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 17.6px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 20px;
             color: $color-white;
         }
     }
 
     h6 {
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 22px;
         color: $color-salmon-text;
     }

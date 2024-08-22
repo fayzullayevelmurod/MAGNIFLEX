@@ -775,8 +775,8 @@ address {
   max-width: 1132px;
   margin: 50px auto 0 auto;
   font-size: 20px;
-  font-weight: 400;
-  line-height: 22px;
+  font-weight: 500;
+  line-height: 30px;
   text-align: center;
   color: #FFFFFF;
 }
@@ -1984,9 +1984,9 @@ address {
 .footer_bottom ul span {
   min-width: -moz-min-content;
   min-width: min-content;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 15.4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13px;
   color: #FFFFFF;
 }
 .footer_social {
@@ -2009,7 +2009,7 @@ address {
 .footer_links {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 13px;
 }
 .footer_links_two {
   display: flex;
@@ -2020,17 +2020,17 @@ address {
 .footer_link {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 13px;
 }
 .footer_link a {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 17.6px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
   color: #FFFFFF;
 }
 .footer h6 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 22px;
   color: #B09987;
 }
